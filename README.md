@@ -4,10 +4,9 @@
 
 ## 准备
 
-- 安装`TensorRT`, TensorRT10的api变化了, 建议用TensorRT8以下的版本
+- 安装`TensorRT`, `TensorRT10`的api变化了, 建议用`TensorRT8`以下的版本
 - 从[huggingface](`https://huggingface.co/Tencent-Hunyuan/HunyuanDiT/tree/main`)下载模型
--
-    - 安装`pytorch`, `onnx`等依赖
+- 安装`pytorch`, `onnx`等依赖
 
 ## 导出4个onnx模型用于pipeline
 
