@@ -8,7 +8,7 @@ bert_tokenizer = AutoTokenizer.from_pretrained('HunyuanDiT/t2i/tokenizer')
 t5_tokenizer = AutoTokenizer.from_pretrained('HunyuanDiT/t2i/mt5')
 
 string = '一只正在吃竹子的大熊猫'
-bert_input_ids = bert_tokenizer(string, padding="max_length", max_len=77).input_ids
+bert_input_ids = bert_tokenizer(string, padding="max_length", max_length=77).input_ids
 t5_input_ids = t5_tokenizer(string, padding="max_length", max_length=256).input_ids
 
 pipeline = hunyuan.Pipeline(
